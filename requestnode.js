@@ -9,8 +9,8 @@ function getAndPrintHTMLChunks () {
 
     https.get(requestOptions, function (response) {
         response.on('data', function (data) {
-            console.log(data);
-            console.log('Chunk Received. Length:', data.length, '\n');
+            console.log(data + '\n');
+            console.log('Chunk Received. Length:', data.length);
           });
     })
     /* Add your code here */
