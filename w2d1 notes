@@ -1,0 +1,16 @@
+Create   Post
+Read     Get
+Update   Put
+Delete   Delete
+
+get the header:
+  curl -I https://www.ligthhouselabs.ca
+
+
+  request(url,function(error, response, body){
+  if (!erros && resposne && response.statusCode === 200)
+    callback(JSON.parse(body))
+    esle {
+    error = 'Error'
+    }
+  })
